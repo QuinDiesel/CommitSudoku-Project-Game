@@ -23,8 +23,12 @@ class Game():
         name = pygame.display.set_caption('Euromast')
         while not process_events():
 
+<<<<<<< HEAD
             screen.fill((255,255,255)) #kleur display
             pygame.display.flip()
+=======
+    screen = pygame.display.set_mode(screen_size)  # pygame code om scherm aan te roepen
+>>>>>>> aa1bf4841a576f06259fb2a3e320b487a7970eb5
 
     def Buttons(self):
 

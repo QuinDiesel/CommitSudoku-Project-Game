@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="68cbf54b-a626-4e52-b715-5230623e1c63" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/ResolutionDisplay.py" afterPath="$PROJECT_DIR$/test/ResolutionDisplay.py" />
     </list>
     <ignored path="CommitSudoku-Project-Game.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -323,7 +322,14 @@
       <option name="project" value="LOCAL" />
       <updated>1484732228470</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="aangepast resolutie naar class">
+      <created>1484735335713</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1484735335713</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -363,7 +369,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="ik zei hoi" />
     <MESSAGE value="Resolutie begin" />
-    <option name="LAST_COMMIT_MESSAGE" value="Resolutie begin" />
+    <MESSAGE value="aangepast resolutie naar class" />
+    <option name="LAST_COMMIT_MESSAGE" value="aangepast resolutie naar class" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
