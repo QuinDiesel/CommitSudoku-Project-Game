@@ -48,17 +48,6 @@ def program():
 =======
 >>>>>>> origin/master
 
-        screen.blit(menu.title, (240, 0))
-        screen.blit(menu.a1, (0, 50))
-        screen.blit(menu.a2, (0, 70))
-        screen.blit(menu.a3, (0, 90))
-        screen.blit(menu.a4, (0, 110))
-        screen.blit(menu.a5, (0, 130))
-        screen.blit(menu.a6, (0, 150))
-        screen.blit(menu.a7, (0, 170))
-        screen.blit(menu.a8, (0, 190))
-        screen.blit(menu.a9, (0, 210))
-
         pygame.display.flip()
 
 def program():
