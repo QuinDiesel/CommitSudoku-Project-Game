@@ -1,6 +1,7 @@
 '''Euromast, Copyright 2017, CommitSudoku'''
 
 import pygame
+import menu
 
 
 def process_events():
@@ -24,6 +25,7 @@ def program():
     while not process_events():
 
         screen.fill((255,255,255)) #kleur display
+        screen.blit(menu.textsurface, (0, 0))
         pygame.display.flip()
 
 
