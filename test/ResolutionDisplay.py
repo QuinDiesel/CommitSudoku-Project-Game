@@ -19,7 +19,7 @@ def program():
 
     pygame.init() #startgame
 
-    screen = pygame.display.set_mode(screen_size)#pygame code om scherm aan te roepen
+    screen = pygame.display.set_mode(screen_size)  # pygame code om scherm aan te roepen
 
     while not process_events():
 
