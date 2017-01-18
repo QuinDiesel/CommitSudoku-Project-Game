@@ -1,6 +1,7 @@
 '''Euromast, Copyright 2017, CommitSudoku'''
 
 import pygame
+import menu
 
 
 def process_events():
@@ -30,6 +31,12 @@ class Game():
 
 
 
+<<<<<<< HEAD
+=======
+        screen.fill((255,255,255)) #kleur display
+        screen.blit(menu.textsurface, (0, 0))
+        pygame.display.flip()
+>>>>>>> origin/master
 
 
 def program():
