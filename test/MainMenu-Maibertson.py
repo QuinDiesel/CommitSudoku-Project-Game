@@ -3,6 +3,9 @@ import math
 
 pygame.init()
 
+pygame.mixer.music.load("music.ogg")
+pygame.mixer.music.play(-1,0.0)
+
 # kleuren
 
 Black = (0,0,0)
@@ -15,47 +18,75 @@ Green = (0,255,0)
 Bright_green = (0,204,0)
 
 # Buttons
-StartButton = pygame.image.load('img/StartButton.png')
+StartButton = pygame.image.load('img/StartButtonWhite.png')
 StartButtonGray = pygame.image.load('img/StartButtonGray.png')
-QuitButton = pygame.image.load('img/QuitButton.png')
+QuitButton = pygame.image.load('img/QuitButtonWhite.png')
 QuitButtonGray = pygame.image.load('img/QuitButtonGray.png')
 InstructionButton = pygame.image.load('img/ButtonInstructionWhite.png')
 InstructionButtonGray = pygame.image.load('img/ButtonInstructionGray.png')
+GameRulesButtonWhite = pygame.image.load('img/GameRulesWhite.png')
+GameRulesButtonGray = pygame.image.load('img/GameRulesGray.png')
 
 # Background
 BG = pygame.image.load('img/BackDropv2.png')
+INBG = pygame.image.load('img/InstructionsView.jpg')
 
 # Display
 
 gameDisplay = pygame.display.set_mode((800,600))
 
 # GameName
-pygame.display.set_caption('EuroMast v.0.0.2')
+pygame.display.set_caption('EuroMast v.0.1.5')
+
+def click():
+    mouse = pygame.mouse.get_pos()
+    click = pygame.mouse.get_pressed()
+
+def Instruction():
+    gameDisplay.blit(INBG)
 
 
-def Button(x, y, function):
+
+def Button(x, y, function,):
     mouse = pygame.mouse.get_pos()
     if x + 100 > mouse[0] > x and y + 50 > mouse[1] > y:
         if function == "start":
             gameDisplay.blit(StartButton, (x, y))
-            #if function == 'start':
+
+
 
         else:
             gameDisplay.blit(QuitButton, (x, y))
+            if event.type == pygame.MOUSEBUTTONDOWN and event.button == 1:
+                pygame.quit()
+                quit()
     else:
         if function == "start":
             gameDisplay.blit(StartButtonGray, (x, y))
-            #if function == 'start':
-                #gameDisplay.blit(InstructionButtonGray,(x,y))
+
         else:
             gameDisplay.blit(QuitButtonGray, (x, y))
 
-def Button_2(x, y, instruc):
+def Button_2(x, y, instruc,):
     mouse = pygame.mouse.get_pos()
+
     if x + 250 > mouse[0] > x and y + 50 > mouse[1] > y:
-        gameDisplay.blit(InstructionButton, (x,y))
+        if instruc == 'learn':
+            gameDisplay.blit(InstructionButton, (x,y))
+            #mouse[1] == True
+            #Instruction()
+
+        else:
+            gameDisplay.blit(GameRulesButtonWhite, (x, y))
+
     else:
-        gameDisplay.blit(InstructionButtonGray, (x,y))
+        if instruc == 'learn':
+            gameDisplay.blit(InstructionButtonGray, (x,y))
+        else:
+            gameDisplay.blit(GameRulesButtonGray, (x, y))
+    #def mouse_click():
+        #if mouse[1] == True
+
 
 
 pygame.display.update()
@@ -74,10 +105,14 @@ while game_intro:
 
 
 
-        Button(280,300,'start')
-        Button(430,300,'quit')
-        Button_2(280,350,'learn')
-        #Button_2(280,350,'learn')
+        Button(280,220,'start')
+        Button(430,220,'quit')
+        Button_2(280,273,'learn')
+        Button_2(280, 326, 'rules ')
+
+
+
+
 
         pygame.display.update()
 
