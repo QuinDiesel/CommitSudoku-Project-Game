@@ -1,6 +1,7 @@
 '''Euromast, Copyright 2017, CommitSudoku'''
 
 import pygame
+import menu
 
 
 def process_events():
@@ -11,21 +12,46 @@ def process_events():
 
     return False
 
+class Game():
+    def __init__(self):
+        width = 800
+        height = 600
+        screen_size = (width, height) #gebonden resolutie
 
+<<<<<<< HEAD
+        pygame.init() #startgame
+
+        screen = pygame.display.set_mode(screen_size)#pygame code om scherm aan te roepen
+        name = pygame.display.set_caption('Euromast')
+        while not process_events():
+          
+            screen.fill((255,255,255)) #kleur display
+            pygame.display.flip()
+=======
 def program():
-    width = 640
-    height = 480
+    width = 800
+    height = 600
     screen_size = (width, height) #gebonden resolutie
+>>>>>>> origin/master
 
-    pygame.init() #startgame
+            screen = pygame.display.set_mode(screen_size)  # pygame code om scherm aan te roepen
 
-    screen = pygame.display.set_mode(screen_size)  # pygame code om scherm aan te roepen
 
-    while not process_events():
 
+<<<<<<< HEAD
+=======
         screen.fill((255,255,255)) #kleur display
+<<<<<<< HEAD
+        screen.blit(menu.textsurface, (0, 0))
+        pygame.display.flip()
+>>>>>>> origin/master
+=======
+>>>>>>> origin/master
+
         pygame.display.flip()
 
+def program():
+    game = Game()
 
 
 program()
