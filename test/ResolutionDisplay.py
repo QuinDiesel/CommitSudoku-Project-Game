@@ -2,15 +2,6 @@
 
 import pygame
 
-# Kleuken
-Black = (0,0,0)
-White = (255,255,255)
-Red = (255,0,0)
-Bright_red = (204,0,0)
-Yellow = (255,255,0)
-Blue = (0,0,255)
-Green = (0,255,0)
-Bright_green = (0,204,0)
 
 def process_events():
     for event in pygame.event.get():
@@ -21,20 +12,45 @@ def process_events():
     return False
 
 
-def program():
-    width = 640
-    height = 480
-    screen_size = (width, height) #gebonden resolutie
+# class program:
 
-    pygame.init() #startgame
+
+class Game():
+    def __init__(self):
+        width = 800
+        height = 600
+        screen_size = (width, height)  # gebonden resolutie
+
+        pygame.init()  #startgame
+
+        screen = pygame.display.set_mode(screen_size)  # pygame code om scherm aan te roepen
+        name = pygame.display.set_caption('Euromast')
+        while not process_events():
+            screen.fill((255, 255, 255))  # kleur display
+            pygame.display.flip()
+
+
+def program():
+    width = 800
+    height = 600
+    screen_size = (width, height)  #gebonden resolutie
 
     screen = pygame.display.set_mode(screen_size)  # pygame code om scherm aan te roepen
 
     while not process_events():
+        screen.fill((255, 255, 255))  # kleur display
+        # menutest.displayRules()
 
-        screen.fill((wit)) #kleur display
+        pygame.display.flip()
+
+        screen.fill((255, 255, 255))  # kleur display
+        screen.blit(menu.textsurface, (0, 0))
+        pygame.display.flip()
+
         pygame.display.flip()
 
 
+def program():
+    game = Game()
 
 program()
