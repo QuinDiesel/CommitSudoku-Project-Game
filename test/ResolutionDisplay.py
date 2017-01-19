@@ -2,6 +2,15 @@
 
 import pygame
 
+# Kleuken
+Black = (0,0,0)
+White = (255,255,255)
+Red = (255,0,0)
+Bright_red = (204,0,0)
+Yellow = (255,255,0)
+Blue = (0,0,255)
+Green = (0,255,0)
+Bright_green = (0,204,0)
 
 def process_events():
     for event in pygame.event.get():
@@ -23,7 +32,7 @@ def program():
 
     while not process_events():
 
-        screen.fill((255,255,255)) #kleur display
+        screen.fill((wit)) #kleur display
         pygame.display.flip()
 
 
