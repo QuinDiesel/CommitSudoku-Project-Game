@@ -64,7 +64,3 @@ class Game:
                     surface.blit(textures[tilemap[row][column]], (column * 200, row * tilesize))
 
             pygame.display.update()
-
-
-a = Game
-a.startGame(Game)

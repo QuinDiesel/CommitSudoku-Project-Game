@@ -24,7 +24,6 @@ QuitButtonGray = pygame.image.load('img/QuitButtonGray.png')
 BG = pygame.image.load('img/BackDrop.png')
 
 # Display
-
 gameDisplay = pygame.display.set_mode((800, 600))
 
 # GameName
