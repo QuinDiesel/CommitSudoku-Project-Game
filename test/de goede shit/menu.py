@@ -17,11 +17,12 @@ class Button:
         if self.x + self.w > mouse[0] > self.x and self.y + self.h > mouse[1] > self.y:
             return True
 
+
 def start_program():
     # Initialize pygame and music
     pygame.init()
     pygame.mixer.music.load('music.ogg')
-    pygame.mixer.music.play(-1, 0.0)
+    # pygame.mixer.music.play(-1, 0.0)
 
     # Load in the images
     startButtonImg = pygame.image.load('img/StartButtonWhite.png')
@@ -79,20 +80,38 @@ def start_program():
                     if event.type == pygame.MOUSEBUTTONDOWN and event.button == 1:
                         pygame.quit()
                         quit()
+
             elif Button.buttonHover(startButtonGray):
                 gameDisplay.blit(startButton.img, (startButton.x, startButton.y))
 
                 if Button.buttonHover(startButton):
                     if event.type == pygame.MOUSEBUTTONDOWN and event.button == 1:
                         phase = "game"
+
             elif Button.buttonHover(gameRulesButtonGray):
                 gameDisplay.blit(gameRulesButton.img, (gameRulesButton.x, gameRulesButton.y))
+
+                if Button.buttonHover(gameRulesButton):
+                    if event.type == pygame.MOUSEBUTTONDOWN and event.button == 1:
+                        phase = "rules"
+
             elif Button.buttonHover(buttonInstructionGray):
                 gameDisplay.blit(buttonInstruction.img, (buttonInstruction.x, buttonInstruction.y))
-        elif phase == "game":
-            print("Game is bezig")
 
-        # pygame.display.update()
+                if Button.buttonHover(buttonInstruction):
+                    if event.type == pygame.MOUSEBUTTONDOWN and event.button == 1:
+                        phase = "instructions"
+
+        elif phase == "game":
+            import Game
+            Game.startGame()
+        elif phase == "rules":
+            import Rules
+            Rules.startRules()
+        elif phase == "instructions":
+            import Instructions
+            Instructions.startInstructions()
+
         pygame.display.flip()
 
 start_program()
