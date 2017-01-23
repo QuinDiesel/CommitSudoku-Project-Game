@@ -1,5 +1,5 @@
 import pygame
-import Definitief.Menu
+import Definitief.Menu as Menu
 
 
 def startInstructions():
@@ -25,4 +25,4 @@ def startInstructions():
             pygame.display.flip()
 
             if event.type == pygame.MOUSEBUTTONDOWN and event.button == 1:
-                Definitief.Menu.start_program()
+                Menu.start_program()

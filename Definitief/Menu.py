@@ -20,9 +20,9 @@ class Button:
 
 def start_program():
     # Imports
-    import Definitief.Game
-    import Definitief.Instructions
-    import Definitief.Rules
+    import Definitief.Game as Game
+    import Definitief.Instructions as Instructions
+    import Definitief.Rules as Rules
 
     # Initialize pygame and music
     pygame.init()
@@ -30,7 +30,7 @@ def start_program():
     pygame.mixer.music.play(-1, 0.0)
 
     # Load in the images
-    startButtonImg = pygame.image.load('../img/StartButtonWhite.png')
+    startButtonImg = pygame.image.load('img/StartButtonWhite.png')
     startButtonGrayImg = pygame.image.load('img/StartButtonGray.png')
     quitButtonImg = pygame.image.load('img/QuitButtonWhite.png')
     quitButtonGrayImg = pygame.image.load('img/QuitButtonGray.png')
@@ -108,11 +108,11 @@ def start_program():
                         phase = "instructions"
 
         elif phase == "game":
-            Definitief.Game.startGame()
+            Game.startGame()
         elif phase == "rules":
-            Definitief.Rules.startRules()
+            Rules.startRules()
         elif phase == "instructions":
-            Definitief.Instructions.startInstructions()
+            Instructions.startInstructions()
 
         pygame.display.flip()
 
