@@ -2,20 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="68cbf54b-a626-4e52-b715-5230623e1c63" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Definitief/img/BackDropv2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Definitief/img/Blauw Vakje.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Definitief/img/ButtonInstrucrion.psd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Definitief/img/Geel Vakje.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Definitief/img/Groen Vakje.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Definitief/img/InstructionGray.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Definitief/img/Instructions.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Definitief/img/QuitButton.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Definitief/img/Rood Vakje.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Definitief/img/StartButton.png" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/test/menu.py" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Definitief/Instructions.py" afterPath="$PROJECT_DIR$/Definitief/Instructions.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Definitief/Menu.py" afterPath="$PROJECT_DIR$/Definitief/Menu.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/.idea/workspace.xml" afterPath="$PROJECT_DIR$/test/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/de goede shit/Instructions.py" afterPath="$PROJECT_DIR$/test/de goede shit/Instructions.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/de goede shit/Rules.py" afterPath="$PROJECT_DIR$/test/de goede shit/Rules.py" />
@@ -581,7 +569,14 @@
       <option name="project" value="LOCAL" />
       <updated>1485168005310</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Definitief folder opgebouwd v1.1">
+      <created>1485168624093</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1485168624093</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -594,7 +589,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32919255" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32919255" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
