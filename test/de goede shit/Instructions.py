@@ -1,5 +1,5 @@
 import pygame
-import menu
+import Menu
 
 
 def startInstructions():
@@ -25,4 +25,4 @@ def startInstructions():
             pygame.display.flip()
 
             if event.type == pygame.MOUSEBUTTONDOWN and event.button == 1:
-                menu.start_program()
+                Menu.start_program()

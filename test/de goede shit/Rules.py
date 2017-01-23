@@ -1,5 +1,5 @@
 import pygame
-import menu
+import Definitief.Menu
 
 
 def startRules():

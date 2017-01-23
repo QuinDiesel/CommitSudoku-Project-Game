@@ -1,4 +1,5 @@
 import pygame
+import sys
 
 
 # Set up a button class for later usage
@@ -19,6 +20,11 @@ class Button:
 
 
 def start_program():
+    # Imports
+    import Rules
+    import Instructions
+    import Game
+
     # Initialize pygame and music
     pygame.init()
     pygame.mixer.music.load('music.ogg')
@@ -75,7 +81,7 @@ def start_program():
             if Button.buttonHover(quitButtonGray):
                 gameDisplay.blit(quitButton.img, (quitButton.x, quitButton.y))
 
-                # Check if the quit button has been pressed
+                # Check if the quit button has been pressed for exit functionality
                 if Button.buttonHover(quitButton):
                     if event.type == pygame.MOUSEBUTTONDOWN and event.button == 1:
                         pygame.quit()
@@ -103,13 +109,10 @@ def start_program():
                         phase = "instructions"
 
         elif phase == "game":
-            import Game
             Game.startGame()
         elif phase == "rules":
-            import Rules
-            Rules.startRules()
+            Rules.displayRules()
         elif phase == "instructions":
-            import Instructions
             Instructions.startInstructions()
 
         pygame.display.flip()
