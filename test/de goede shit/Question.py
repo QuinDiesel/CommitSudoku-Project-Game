@@ -39,7 +39,13 @@ def question():
 
     if player_position == 0 and red_score == 1:
         print("Question R2: What is the name of the cultural and culinary exploration of Rotterdam? \n 1. Drive & Eat \n 2. Bicycle Diner \n 3. Bike & Bite")
-
+        answer = int(input(""))
+        if answer == 3:
+            print("That is correct")
+            red_score = red_score - 1
+        else:
+            print("That is wrong")
+            
     if player_position == 1 and yellow_score == 0:
         print("Question Y1: What does the abbreviation of the NRC newspaper stands for? \n 1. Nieuw Rotterdam Chronicle \n 2. Nieuwe Rotterdamsche Courant \n 3. Nieuwe Rotterdamse Coöperatie")
         answer = int(input(""))
@@ -93,5 +99,10 @@ def question():
             green_score = green_score - 1
         else:
             print("That is wrong")
+            
+    else:
+        print("Please reselect a correct color")
+        return question()
+
 question()
 
