@@ -1,8 +1,8 @@
 import pygame
-import Definitief.Menu as Menu
 
 
 def startInstructions():
+    import menu
     gameDisplay = pygame.display.set_mode((800, 600))
     pygame.display.set_caption("Instructions")
 
@@ -25,4 +25,4 @@ def startInstructions():
             pygame.display.flip()
 
             if event.type == pygame.MOUSEBUTTONDOWN and event.button == 1:
-                Menu.start_program()
+                menu.start_program()

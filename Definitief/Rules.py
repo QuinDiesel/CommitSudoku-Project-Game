@@ -1,8 +1,8 @@
 import pygame
-import Definitief.Menu
 
 
-def startRules():
+def displayRules():
+    import menu
     gameDisplay = pygame.display.set_mode((800, 600))
     pygame.display.set_caption("Rules")
 
@@ -25,4 +25,4 @@ def startRules():
             pygame.display.flip()
 
             if event.type == pygame.MOUSEBUTTONDOWN and event.button == 1:
-                Definitief.Menu.start_program()
+                menu.start_program()
