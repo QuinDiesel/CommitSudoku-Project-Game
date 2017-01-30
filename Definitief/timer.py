@@ -22,9 +22,16 @@ def timer():
                quit()
             if e.type == pygame.MOUSEBUTTONDOWN and e.button == 1:
                proefgame()
+            #if text == ('time\'s up'):
+
+
         else:
             screen.fill((0,0,0))
-            screen.blit(font.render(text, True, (255,255,255)), (700, 30))
+            screen.blit(font.render(text, True, (0,255,0)), (700, 30))
+            if counter < 25:
+                screen.blit(font.render(text, True, (255, 255, 0)), (700, 30))
+            if counter < 10:
+                screen.blit(font.render(text, True, (255,0,0)), (700, 30))
             pygame.display.flip()
             clock.tick(60)
             continue
