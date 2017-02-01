@@ -28,7 +28,7 @@ def update():
     #initialize font; must be called after 'pygame.init()' to avoid 'Font not Initialized' error
     #myFont = pygame.font.SysFont("monospace", 32)
 
-    conn = psycopg2.connect(database="score", user="postgres", password="mercedes")
+    conn = psycopg2.connect(database="score", user="postgres", password="mercedes") #Eigen wachtwoord invoeren
     print("Opened database successfully")
 
     cur = conn.cursor()
